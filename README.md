@@ -27,7 +27,7 @@ This makes development and support cleaner, more consistent, and easier to maint
 
 ## 💬 Feature Requests
 
-I’m open to suggestions for new features or expanded support. While these are not a top development priority, I’m happy to consider any requests made via my **[Discord server](https://your-discord-invite-link-here)**.
+I’m open to suggestions for new features or expanded support. While these are not a top development priority, I’m happy to consider any requests made via my **[Discord server](https://discord.gg/zNtFN3m)**.
 
 ---
 

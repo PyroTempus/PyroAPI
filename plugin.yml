@@ -1,0 +1,7 @@
+name: PyroAPI
+main: me.PyroAPI.Main
+version: 1.0.0
+author: PyroTempus
+depend: [PyroLib]
+api-version: 1.14
+commands:

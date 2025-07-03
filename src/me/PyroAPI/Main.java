@@ -14,7 +14,7 @@ public class Main extends JavaPlugin {
         checkPlugin("PyroFishingPro", "4.10.0");
         checkPlugin("PyroMining", "5.0.0");
         checkPlugin("PyroWeatherPro", "5.0.0");
-        checkPlugin("PyroFarming", "1.3.0");
+        checkPlugin("PyroFarming", "1.2.7");
     }
 
     @Override

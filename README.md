@@ -46,3 +46,16 @@ Plugin pyroFishing = getServer().getPluginManager().getPlugin("PyroFishingPro");
 if (pyroFishing != null) {
     // Safe to call PyroAPI methods
 }
+```
+## Compile PyroAPI Yourself
+Prerequisites:
+* [Java 17+](https://adoptopenjdk.net/) (required)
+* [Maven](https://maven.apache.org/download.cgi) installed and added to your `PATH`
+
+**Clone the repository and build the plugin with Maven:**
+```bash
+git clone https://github.com/PyroTempus/PyroAPI.git
+cd PyroAPI
+mvn clean package
+```
+* The compiled plugin will be in the `target/` directory, named `PyroAPI-<version>.jar`.

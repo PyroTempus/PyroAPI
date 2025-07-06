@@ -1,5 +1,5 @@
 name: PyroAPI
-main: me.PyroAPI.Main
+main: me.PyroAPI.PyroAPI
 version: 1.0.0
 author: PyroTempus
 depend: [PyroLib]

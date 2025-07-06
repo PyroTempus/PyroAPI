@@ -3,9 +3,15 @@ package me.PyroAPI;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class Main extends JavaPlugin {
+import me.PyroAPI.Interfaces.PyroFishingProAPI;
 
-    private static Main instance;
+public class PyroAPI extends JavaPlugin {
+	
+	// API Layers - These will be null if the plugin is not available.
+	public static PyroFishingProAPI PYROFISHING_API;
+	
+	
+    private static PyroAPI instance;
 
     @Override
     public void onEnable() {
@@ -49,8 +55,9 @@ public class Main extends JavaPlugin {
         return true;
     }
 
-    public static Main getInstance() {
+    public static PyroAPI getInstance() {
         return instance;
     }
+
 }
 

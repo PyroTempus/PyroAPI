@@ -87,7 +87,7 @@ public interface PyroFishingProAPI {
     /**
      * Gets the ID of the currently active fishing tournament.
      * 
-     * If no tournament is active, this method may return {@code null} or an empty string.
+     * If no tournament is active, this method will return an empty string.
      * 
      * @return the active tournament's ID as a {@link String}, or {@code null} if no tournament is active
      */

@@ -42,9 +42,12 @@ To use this API in your project:
 Example usage:
 
 ```java
-Plugin pyroFishing = getServer().getPluginManager().getPlugin("PyroFishingPro");
-if (pyroFishing != null) {
-    // Safe to call PyroAPI methods
+Plugin pyroFishingPro = getServer().getPluginManager().getPlugin("PyroFishingPro");
+boolean hasPyroFishingPro = pyroFishingPro != null && pyroFishingPro.isEnabled();
+		
+if(hasPyroFishingPro) {
+    PyroFishingProAPI pyroFishingProAPI = PyroAPI.PYROFISHING_API;
+    // Safe to call methods;
 }
 ```
 ## Compile PyroAPI Yourself

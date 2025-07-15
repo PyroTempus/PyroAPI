@@ -1,5 +1,7 @@
 package me.PyroAPI.Interfaces;
 
+import java.util.Map;
+
 /**
  * Represents a player's fishing-related statistics and progress within PyroFishingPro.
  * Provides methods to access and modify the player's fishing level, experience,

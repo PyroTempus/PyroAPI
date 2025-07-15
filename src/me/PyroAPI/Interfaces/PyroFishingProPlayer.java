@@ -49,26 +49,20 @@ public interface PyroFishingProPlayer {
     int getEntropy();
 
     /**
-     * Removes a specified amount of entropy from the player.
-     *
-     * @param amount the amount of entropy to remove.
-     */
-    void removeEntropy(int amount);
-
-    /**
-     * Adds a specified amount of entropy to the player.
-     *
-     * @param amount the amount of entropy to add.
-     */
-    void addEntropy(int amount);
-
-    /**
      * Gets the player's progress in completing the fishing codex.
      *
      * @return the codex completion progress as a decimal between 0.00 and 100.00,
      *         where 100.00 indicates full completion.
      */
     double getCodexCompletion();
+
+    /**
+     * Gets the players total caught fish.
+     *
+     * @return a map of the fish name and tier in format: 'tier:fishId' i.e. 'bronze:bass'
+     *         and the number of fish caught by the player.
+     */
+    Map<String, Integer> getFishCaught();
 
 }
 

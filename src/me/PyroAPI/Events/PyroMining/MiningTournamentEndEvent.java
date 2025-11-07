@@ -1,4 +1,4 @@
-package me.PyroAPI.Events.PyroFarming;
+package me.PyroAPI.Events.PyroMining;
 
 import java.util.Collections;
 import java.util.Map;
@@ -6,14 +6,14 @@ import java.util.Map;
 import me.PyroAPI.Events.PyroBaseEvent;
 
 /**
- * Event fired when a farming tournament ends.
+ * Event fired when a mining tournament ends.
  * <p>
  * This event contains the tournament type, its duration, whether rewards were given,
  * and the final leaderboard containing player names mapped to their score.
  * <p>
  * Note: This event is only fired once per tournament, and should be treated as read-only.
  */
-public class FarmingTournamentEndEvent extends PyroBaseEvent {
+public class MiningTournamentEndEvent extends PyroBaseEvent {
 
     private final String tournamentType;
     private final int duration;
@@ -21,14 +21,14 @@ public class FarmingTournamentEndEvent extends PyroBaseEvent {
     private final Map<String, ? extends Number> leaderboard;
 
     /**
-     * Constructs a new FarmingTournamentEndEvent.
+     * Constructs a new MiningTournamentEndEvent.
      *
-     * @param tournamentType The name of the tournament that just ended (e.g., "Most Sugarcane").
+     * @param tournamentType The name of the tournament that just ended (e.g., "Most Gems").
      * @param duration       The duration of the tournament in seconds.
      * @param rewardsGiven   Whether or not rewards were distributed at the end of the tournament.
      * @param leaderboard    A map of player names to their final score/statistic.
      */
-    public FarmingTournamentEndEvent(String tournamentType, int duration, boolean rewardsGiven, Map<String, ? extends Number> leaderboard) {
+    public MiningTournamentEndEvent(String tournamentType, int duration, boolean rewardsGiven, Map<String, ? extends Number> leaderboard) {
         this.tournamentType = tournamentType;
         this.duration = duration;
         this.rewardsGiven = rewardsGiven;
@@ -38,7 +38,7 @@ public class FarmingTournamentEndEvent extends PyroBaseEvent {
     /**
      * Gets the type of tournament.
      *
-     * @return The tournament name (e.g., "Most Sugarcane").
+     * @return The tournament name (e.g., "Most Gems").
      */
     public String getTournamentType() {
         return tournamentType;

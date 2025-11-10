@@ -11,7 +11,7 @@ This API currently supports the following plugins and their minimum required ver
 - **PyroFishingPro** `v4.10.0+`
 - **PyroMining** `v5.0.0+`
 - **PyroWeatherPro** `v4.4.0+`
-- **PyroFarming** `v1.2.7+`
+- **PyroFarming** `v1.4.0+`
 
 > 🔥 Note: This API is still in development. Please check if the above versions match your current release/version, and if they don't, see if they exist. If it doesn't yet, then it is still in-development.
 

@@ -56,7 +56,23 @@ public interface PyroFishingProPlayer {
      * @return the codex completion progress as a decimal between 0.00 and 100.00,
      *         where 100.00 indicates full completion.
      */
-    double getCodexCompletion();
+    double getFishCodexCompletion();
+    
+    /**
+     * Gets the player's progress in completing the sea creature codex.
+     *
+     * @return the codex completion progress as a decimal between 0.00 and 100.00,
+     *         where 100.00 indicates full completion.
+     */
+    double getSeaCreatureCodexCompletion();
+    
+    /**
+     * Gets the player's progress in completing the treasure codex.
+     *
+     * @return the codex completion progress as a decimal between 0.00 and 100.00,
+     *         where 100.00 indicates full completion.
+     */
+    double getTreasureCodexCompletion();
 
     /**
      * Gets the players total caught fish.

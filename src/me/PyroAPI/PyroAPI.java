@@ -3,12 +3,16 @@ package me.PyroAPI;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import me.PyroAPI.Interfaces.PyroFarmingAPI;
 import me.PyroAPI.Interfaces.PyroFishingProAPI;
+import me.PyroAPI.Interfaces.PyroMiningAPI;
 
 public class PyroAPI extends JavaPlugin {
 	
 	// API Layers - These will be null if the plugin is not available.
 	public static PyroFishingProAPI PYROFISHING_API;
+	public static PyroFarmingAPI PYROFARMING_API;
+	public static PyroMiningAPI PYROMINING_API;
 	
 	
     private static PyroAPI instance;
@@ -20,7 +24,7 @@ public class PyroAPI extends JavaPlugin {
         checkPlugin("PyroFishingPro", "4.10.0");
         checkPlugin("PyroMining", "5.0.0");
         checkPlugin("PyroWeatherPro", "5.0.0");
-        checkPlugin("PyroFarming", "1.2.7");
+        checkPlugin("PyroFarming", "1.4.0");
     }
 
     @Override

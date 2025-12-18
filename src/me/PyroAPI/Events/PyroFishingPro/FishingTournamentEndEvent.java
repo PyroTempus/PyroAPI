@@ -11,7 +11,14 @@ import me.PyroAPI.Events.PyroBaseEvent;
  * This event contains the tournament type, its duration, whether rewards were given,
  * and the final leaderboard containing player names mapped to their score.
  * <p>
- * Note: This event is only fired once per tournament, and should be treated as read-only.
+ * 
+ *  * <p>Example usage:
+ * <pre>{@code
+ * @EventHandler
+ * public void onTournamentEnd(FishingTournamentEndEvent event) {
+ *     Bukkit.broadcastMessage("A " + event.getTournamentType() + " tournament has ended!");
+ * }
+ * }</pre>
  */
 public class FishingTournamentEndEvent extends PyroBaseEvent {
 
